@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FASTA Classification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>FASTA Classification</h1>
+
+  <input type="file" id="fastaFile" accept=".fasta">
+
+  <label for="threshold">Threshold:</label>
+  <input type="range" id="threshold" min="0" max="1" step="0.01" value="0.5">
+  <span id="thresholdValue">0.5</span>
+
+  <button id="classifyButton">Classify</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
